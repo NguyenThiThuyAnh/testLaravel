@@ -20,6 +20,7 @@ class CreateFinaceTable extends Migration
             $table->integer('price');
             $table->string('desc',1000);
             $table->integer('buy');
+            
         });
     }
 
