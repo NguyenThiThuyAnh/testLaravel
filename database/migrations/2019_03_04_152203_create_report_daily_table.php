@@ -13,7 +13,7 @@ class CreateReportDailyTable extends Migration
      */
     public function up()
     {
-        Schema::create('report_daily', function (Blueprint $table) {
+        Schema::create('reportDaily', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('project_id');
             $table->string('title');
@@ -28,7 +28,7 @@ class CreateReportDailyTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('report_daily', function (Blueprint $table) {
+        Schema::dropIfExists('reportDaily', function (Blueprint $table) {
             //
         });
     }
