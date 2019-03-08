@@ -15,5 +15,6 @@ class HomeController extends Controller
     public function getData(Request $request){
 
          return $request->path();
+
 }
 }
