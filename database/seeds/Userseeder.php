@@ -19,7 +19,7 @@ class Userseeder extends Seeder
             'phone'=>'1234567',
             'gender'=>'1',
             'id_group'=>'1',
-            'id_departmet'=>'1',
+            'id_department'=>'1',
             'is_admin'=>'1',
             'id_company'=>'1',
             'last_visit'=>\Carbon\Carbon::now()->toDateTimeString()

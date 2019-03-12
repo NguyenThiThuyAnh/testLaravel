@@ -21,4 +21,5 @@ class user extends Model
         return $this->hasMany('App\Models\member_department','id_department','id');
     }
 
+
 }

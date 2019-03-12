@@ -22,16 +22,16 @@ class CreateUserTable extends Migration
             $table->string('address',255);
             $table->string('phone',255);
             $table->integer('gender')->comment('1:nam,2:nữ,3:other');
-            $table->string('facebook_id',255);
-            $table->string('google_id',255);
-            $table->integer('status');
+            $table->string('facebook_id',255)->nullable();
+            $table->string('google_id',255)->nullable();
+            $table->integer('status')->nullable()->default();
             $table->integer('id_group');
             $table->integer('id_department');
             $table->integer('is_admin');
             $table->integer('id_company');
-            $table->integer('pemistion_app');
+            $table->integer('pemistion_app')->nullable();
             $table->dateTime('last_visit');
-            $table->string('remember_token');
+            $table->string('remember_token')->nullable();
         });
     }
 
