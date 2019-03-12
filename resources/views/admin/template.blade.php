@@ -327,7 +327,7 @@
 
             </nav>
             <!-- End of Topbar -->
-
+            <div id="content-wrapper">@yield('content-admin')</div>
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
@@ -671,6 +671,9 @@
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
+<link href="{{asset('css/admin/all.min.css')}}" rel="stylesheet" type="text/css">;
+<srcipt src="{{asset('js/admin/jquery.min.js')}}"></srcipt>
+
 
 </body>
 

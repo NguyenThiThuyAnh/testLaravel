@@ -34,6 +34,11 @@ Route::get('uploadFile',function() {
 Route::get(' demo/{demo}','MyController@postFile')->name('demo.postFile');
 
 Route::resource('user','Backend\DemoController');
+Route::get('/admin','Admin\AdminController@index')->name('admin.index');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
